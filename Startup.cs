@@ -39,5 +39,12 @@ namespace cd_c_portfolio
             //     });
             // });
         }
+
+        // ADD THESE LINES -->
+        public Startup(IWebHostEnvironment env)
+        {
+            System.Console.WriteLine(env.ContentRootPath);
+            System.Console.WriteLine(env.IsDevelopment());
+        } // --> THROUGH HERE
     }
 }
